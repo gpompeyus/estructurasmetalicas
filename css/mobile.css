@@ -1,0 +1,373 @@
+body {
+    overflow-x: hidden;
+
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+/*ICONO HAMBURGUESA CON TRANSFORMACION EN X*/
+.bar{ /*Estilo de las tres rayitas*/
+    height: 3px;
+    width: 100%;
+    background-color: black;
+    display: block;
+    border-radius: 5px;
+    transition: 0.3s ease;
+}
+
+#bar1{ /*Las tres rayitas se vuelven una sola*/
+    transform: translateY(-4px);
+}
+
+#bar3 { /*Las tres rayitas se vuelven una sola*/
+    transform: translateY(4px);
+}
+
+.change .bar{ /*Click para cambiar el fondo de las rayitas*/
+    background-color: black;
+}
+
+.change #bar1 { /*Click para mover y rotar la rayita superior*/
+    transform: translateY(4px) rotateZ(-45deg);
+}
+
+.change #bar3 { /*Click para mover y rotar la rayita inferior*/
+    transform: translateY(-4px) rotate(45deg);
+}
+
+.change #bar2 { /*Click para esconder la rayita del medio*/
+    opacity: 0;
+}
+
+#menu { /*Container tres rayitas de la hamburguesa*/
+    position: absolute;
+    left: 20px;
+    width: 32px;
+    height: 12px;
+    margin: 30px 0 20px 20px;
+    cursor: pointer;
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: space-between;
+}
+
+/*BARRA DE NAVEGACION*/
+.nav li a{ /*Color de los links*/
+    color: black;
+    font-family: 'Poppins', Arial, sans-serif;
+    letter-spacing: 1px;
+}
+
+.nav li a:hover{ /*Color al pasar el mouse por los links*/
+    font-weight: 700;
+}
+
+.nav{ /*Estilo del ul nav*/
+    transition: 0.15s ease;
+    display: none;/*El nav no debe verse al principio*/
+}
+
+.change { /*Muestra el nav al hacer click*/
+    margin-top: 50px;
+    height: auto;
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.menu-bg { /*Animacion Fondo de la Barra de Navegacion*/
+    width: 0;
+    height: 0;
+    background: whitesmoke;
+    transition: width .15s ease;
+    z-index: 1; /*Debajo de los links de navegacion*/
+}
+
+#menu-bar{
+    width:60vw;
+    z-index: 2;/*Encima de la animacion de fondo*/
+}
+
+.change-bg { /*Fondo de la Barra de Navegacion*/
+    width: 60vw;
+    height: 100vh;
+}
+
+.menu-bg, #menu-bar{ /*Desconectarlos para que no se sobrepongan*/
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+/*HASTA AQUI LA BARRA DE NAVEGACION*/
+header{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    align-items: center;
+    height: 75px;
+    background-color: whitesmoke;
+}
+
+#logo-catolica {
+    position: absolute;
+    right: 5px;
+    top: 2px;
+    background-image: url("../img/logo_catolica.jpeg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 165px;
+    height: 70px;
+}
+
+.portada {
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: rgb(255,255,255);
+    background: linear-gradient(180deg, rgba(255,255,255,1) 0%, rgba(0,0,0,0.65) 0%), url("../img/portada_metalica.jpg");
+    background-color: whitesmoke;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+h1 {
+    font-family: 'Muli',Arial,sans-serif;
+    font-size: 2.2rem;
+    color: whitesmoke;
+    text-align: center;
+ }
+
+h2 {
+    margin-top: 4px;
+    font-family: 'Poppins',Verdana,sans-serif;
+    font-size: 1rem;
+    color: #c0c0c0;
+    text-align: center;
+ }
+
+#boton-portada{
+    cursor: pointer;
+    font-size: .8rem;
+    border: 1px solid whitesmoke;
+    border-radius: 32px;
+    padding: 8px;
+    margin-top: 5px;
+    width: 130px;
+    font-family:'Poppins',Verdana,sans-serif;
+    letter-spacing: 1px;
+    color: #dbdbdb;
+}
+
+.docente-container { /*div Docente*/
+    padding: 25px;
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #F0F0F0;
+    width: 100%;
+}
+
+.icon-container {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    align-items: flex-start;
+    width:160px;
+    height:40px;
+}
+
+.icon-container a{
+    width: 30px;
+    height: 30px;
+}
+
+.enunciado {
+    margin-top: 10px;
+    height: 20px;
+    font-family: 'Muli', Verdana, sans-serif;
+    font-size: 1rem;
+}
+
+#foto-docente {
+    margin-top: 10px;
+    height: 150px;
+    width: 150px;
+    border-radius: 50%;
+    background-image: url("../img/docente.jpg");
+    background-size: cover;
+    background-position:top;
+    background-repeat: no-repeat;
+}
+
+.nombre-docente {
+    margin-top: 10px;
+    text-align: center;
+    font-family:'Poppins', Arial, sans-serif;
+    font-size: 1.1rem;
+    font-weight: bold;
+
+}
+
+.educacion-docente, .profesion-docente {
+    text-align: center;
+    font-family:'Muli', Arial, sans-serif;
+    margin-top: 5px;
+    font-size: .95rem;
+}
+
+#pompeyus-estructuras {
+    font-family: 'Muli', Arial, sans-serif;
+    color: blue;
+    font-size: 1rem;
+}
+
+#pompeyus-estructuras:hover{
+    text-decoration: underline;
+}
+
+#pompeyus-estructuras:visited{
+    color: #883EAD;
+}
+
+/*CONTENIDO DEL CURSO*/
+
+.contenido-container {
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.descripcion-curso{
+    text-align: justify;
+    margin: 20px auto;
+    font-family:'Muli', Arial, sans-serif;
+    font-size: 1rem;
+    width: 80%;
+    line-height: 1.8rem;
+}
+
+.descripcion-curso p{
+    line-height: 1.8rem;
+
+}
+
+.descripcion-curso ul{
+    height: auto;
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding-left: 30px;
+    list-style-image: url("../img/checkmark-icon.svg");
+}
+
+.descripcion-curso ul li{
+    line-height: 1.4rem;
+    margin-top: .9rem;
+
+}
+
+
+.read-more-wrap { /*Indice de contenido*/
+    margin: 0 auto;
+    width: 80%;
+}
+
+.read-more-wrap .unidad {
+    margin-top: 10px;
+    padding: 10px;
+    width: 100%;
+    min-height: 40px;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: flex-start;
+    align-items: center;
+    font-family:'Poppins', Arial, sans-serif;
+    font-size: 1rem;
+    font-weight: 700;
+    background-color: #dbdbdb;
+}
+
+.read-more-wrap .subunidad{
+    font-family:'Muli', Arial, sans-serif;
+    font-size: 1rem;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgb(245,245,245);
+    border-top: 2px solid whitesmoke;
+}
+
+.read-more-wrap .subunidad:hover{
+    background-color: #4c4c4c;
+    color: #d2d2d2;
+}
+.read-more-wrap .texto-subunidad {
+
+    display: inline-block;
+    min-height: 40px;
+    vertical-align: center;
+    padding:10px;
+}
+
+.read-more-wrap .subunidad-icon { /*tamaño del icono en la subunidad*/
+    width: 20px;
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: 5px;
+}
+
+
+/*BOTON VER MAS/VER MENOS*/
+
+
+/*.read-more-state {*/
+/*    display: none;*/
+/*}*/
+
+/*.read-more-target {*/
+/*    opacity: 0;*/
+/*    max-height: 0;*/
+/*    font-size: 0;*/
+/*    transition: .25s ease;*/
+/*}*/
+/*!*!*Cuando hago click en Ver mas*!*!*/
+/*.read-more-state:checked ~ .read-more-wrap .read-more-target {*/
+/*    opacity: 1;*/
+/*    font-size: inherit;*/
+/*    max-height: 999em;*/
+/*}*/
+/*!*!*Contenido del Boton antes de hacer click*!*!*/
+/*.read-more-state ~ .read-more-trigger:before {*/
+/*    content: 'Ver mas >';*/
+/*}*/
+/*!*!*Contenido del Boton despues de hacer click*!*!*/
+/*.read-more-state:checked ~ .read-more-trigger:before {*/
+/*    content: 'Ver menos <';*/
+
+/*}*/
+/*!*!*Estilo del boton antes y despues de hacer click*!*!*/
+/*.read-more-trigger {*/
+/*    cursor: pointer;*/
+/*    display: inline-block;*/
+/*    padding: 0 .5em;*/
+/*    color: black;*/
+/*    font-size: .7em;*/
+/*    font-family:'Poppins', Arial, sans-serif;*/
+/*    line-height: 2;*/
+/*    border: 1px solid #ddd;*/
+/*    border-radius: .25em;*/
+/*}*/
+
+/*!*!* Other style *!*!*/
