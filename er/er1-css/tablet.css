@@ -1,17 +1,13 @@
-html{
+html {
     font-size: 62.5%;
 }
 
-body {
+body{
+    background-color: white;
     overflow-x: hidden;
-
 }
-
-html {
-    scroll-behavior: smooth;
-}
-
 /*ICONO HAMBURGUESA CON TRANSFORMACION EN X*/
+
 .bar{ /*Estilo de las tres rayitas*/
     height: 3px;
     width: 100%;
@@ -48,6 +44,7 @@ html {
 #menu { /*Container tres rayitas de la hamburguesa*/
     position: absolute;
     left: 20px;
+    top: 0;
     width: 32px;
     height: 12px;
     margin: 30px 0 20px 20px;
@@ -58,15 +55,6 @@ html {
 }
 
 /*BARRA DE NAVEGACION*/
-.nav li a{ /*Color de los links*/
-    color: black;
-    font-family: 'Poppins', Arial, sans-serif;
-    letter-spacing: 1px;
-}
-
-.nav li a:hover{ /*Color al pasar el mouse por los links*/
-    font-weight: 700;
-}
 
 .nav{ /*Estilo del ul nav*/
     transition: 0.15s ease;
@@ -75,29 +63,31 @@ html {
 
 .change { /*Muestra el nav al hacer click*/
     margin-top: 50px;
-    height: auto;
     display: flex;
-    flex-flow: column wrap;
-    justify-content: space-between;
+    flex-flow: column nowrap;
+    justify-content: flex-start;
     align-items: center;
+    height: 100vh;
+    background-color: whitesmoke;
+
 }
 
 .menu-bg { /*Animacion Fondo de la Barra de Navegacion*/
     width: 0;
-    height: 0;
     background: whitesmoke;
     transition: width .15s ease;
     z-index: 1; /*Debajo de los links de navegacion*/
 }
 
-#menu-bar{
-    width:60vw;
+.menu-bar{
+    width:100vw;
     z-index: 2;/*Encima de la animacion de fondo*/
+    background-color: whitesmoke;
 }
 
 .change-bg { /*Fondo de la Barra de Navegacion*/
-    width: 60vw;
-    height: 100vh;
+    width: 100vw;
+    height: 110vh;
 }
 
 .menu-bg, #menu-bar{ /*Desconectarlos para que no se sobrepongan*/
@@ -109,178 +99,164 @@ html {
 header{
     display: flex;
     flex-flow: row wrap;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
     height: 75px;
     background-color: whitesmoke;
+    margin-bottom: 20px;
 }
 
-#logo-catolica {
+.menu-subunidad {
+    width: 85%;
     position: absolute;
-    right: 5px;
-    top: 2px;
-    background-image: url("../img/logo_catolica.jpeg");
+    top: 0;
+    right: 0;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    align-items: center;
+    height: 75px;
+
+}
+.parte-izq {
+    width: 50%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.parte-der {
+    background-color: whitesmoke;
+    height: 100%;
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+.flecha-izq {
+    height: 75px;
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+.inicio {
+    height: 75px;
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+.logo-anterior {
+    background-image: url("../img/flecha-izquierda.svg");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    width: 165px;
-    height: 70px;
-}
-
-.portada {
-    display: flex;
-    flex-flow: column wrap;
-    justify-content: center;
-    align-items: center;
-    height: 50vh;
-    background: rgb(255,255,255);
-    background: linear-gradient(180deg, rgba(255,255,255,1) 0%, rgba(0,0,0,0.65) 0%), url("../img/portada_metalica.jpg");
-    background-color: whitesmoke;
-    background-size: cover;
-    background-position: bottom;
-    background-repeat: no-repeat;
-}
-
-h1 {
-    font-family: 'Open Sans', sans-serif;
-    font-size: 4rem;
-    color: whitesmoke;
-    text-align: center;
-    font-weight: 700;
- }
-
-h2 {
-    margin-top: 4px;
-    font-family: 'Open Sans', sans-serif;
-    font-size: 2.2rem;
-    color: #c0c0c0;
-    text-align: center;
-    font-weight: 400;
- }
-
- #boton-portada{
-    cursor: pointer;
-    font-size: 1.8rem;
-    font-weight: 700;
-    border: 1px solid whitesmoke;
-    border-radius: 32px;
-    padding: 7px;
-    margin-top: 8px;
-    width: 180px;
-    font-family:'Open Sans', sans-serif;
-    letter-spacing: 1px;
-    color: #dbdbdb;
-}
-
-.docente-container { /*div Docente*/
-    display: flex;
-    flex-flow: column wrap;
-    justify-content: space-around;
-    align-items: center;
-    background-color: #F0F0F0;
-    width: 100%;
-}
-
-.icon-container {
-    display: flex;
-    flex-flow: row wrap;
-    justify-content: space-between;
-    align-items: flex-start;
-    width:160px;
-    height:40px;
-}
-
-.icon-container a{
     width: 30px;
     height: 30px;
 }
 
-.enunciado {
-    margin-top: 10px;
-    height: 20px;
-    font-family:'Open Sans', sans-serif;
-    font-size: 1.6rem;
-}
-
-#foto-docente {
-    margin-top: 10px;
-    height: 150px;
-    width: 150px;
-    border-radius: 50%;
-    background-image: url("../img/docente.jpg");
+.logo-inicio {
+    background-image: url("../img/home.svg");
     background-size: cover;
-    background-position:top;
+    background-position: center;
     background-repeat: no-repeat;
+    width: 30px;
+    height: 30px;
 }
 
-.nombre-docente {
-    margin-top: 10px;
-    text-align: center;
-    font-family:'Open Sans', sans-serif;
-    font-size: 1.8rem;
-    font-weight: 700;
-
+.logo-siguiente {
+    background-image: url("../img/flecha-derecha.svg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 30px;
+    height: 30px;
+    margin: 0 auto;
 }
 
-.educacion-docente, .profesion-docente {
-    text-align: center;
-    font-family:'Open Sans', sans-serif;
-    margin-top: 5px;
-    font-size: 1.6rem;
-}
 
-#pompeyus-estructuras {
+h1 {
     font-family: 'Open Sans', sans-serif;
-    color: blue;
-    font-size: 1.6rem;
+    font-weight: 700;
+    font-size: 2rem;
+    color: black;
+    text-align: center;
+ }
+
+h2 {
+    padding: 15px;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1.8rem;
+    font-weight: 400;
+    color: black;
+    text-align: justify;
+    line-height: 2.6rem;
+ }
+
+ h3 {
+     position: relative;
+     left: 20px;
+     font-family: 'Open Sans', sans-serif;
+     font-weight: 400;
+     font-size: 1.8rem;
+     color:black;
+     text-align: justify;
+ }
+
+#contenido-general{
+    position: absolute;
+    width: 100vw;
+    height: 100vh;
+    left: 0;
+    overflow: auto;
 }
 
-#pompeyus-estructuras:hover{
-    text-decoration: underline;
-}
-
-#pompeyus-estructuras:visited{
-    color: #883EAD;
+#enunciado{
+    margin: 0 auto;
+    background-color:white;
+    width: 100%;
 }
 
 /*CONTENIDO DEL CURSO*/
 
-.contenido-container {
-    display: flex;
-    flex-flow: column wrap;
-    justify-content: flex-start;
-    align-items: center;
-}
-
-.descripcion-curso{
-    text-align: justify;
-    margin: 20px auto;
-    font-family:'Open Sans', sans-serif;
-    font-size: 1.8rem;
-    width: 80%;
-    
-}
-
-.descripcion-curso p{
-    line-height: 2.6rem;
-
-}
-
-.descripcion-curso ul{
+.contenido-subunidad {
+    background-color: white;
+    width: 100%;
     height: auto;
     display: flex;
     flex-flow: column wrap;
-    justify-content: space-between;
-    align-items: flex-start;
-    padding-left: 30px;
-    list-style: square;
-}
-
-.descripcion-curso ul li{
-    line-height: 2.6rem;
-    margin-top: .9rem;
+    justify-content: flex-start;
+    align-content: center;
 
 }
+
+.image1 {
+    background-image: url("https://filedn.com/lI8wAFRCHTkXQQM0PTWcKT5/metalica/img/er/er1/er1_001.jpg");
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 1050px;
+    width: 100%;
+
+
+}
+
+.image2 {
+    background-image: url("https://filedn.com/lI8wAFRCHTkXQQM0PTWcKT5/metalica/img/er/er1/er1_002.jpg");
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 1050px;
+    width: 100%;
+}
+
 
 
 .read-more-wrap { /*Indice de contenido*/
@@ -322,6 +298,7 @@ h2 {
 .read-more-wrap .texto-subunidad {
 
     display: inline-block;
+    width: 90%;
     min-height: 40px;
     vertical-align: center;
     padding:10px;
@@ -333,6 +310,7 @@ h2 {
     vertical-align: middle;
     margin-right: 5px;
 }
+
 
 /*BOTON VER MAS/VER MENOS*/
 
@@ -347,22 +325,22 @@ h2 {
 /*    font-size: 0;*/
 /*    transition: .25s ease;*/
 /*}*/
-/*!*!*Cuando hago click en Ver mas*!*!*/
+/*!*Cuando hago click en Ver mas*!*/
 /*.read-more-state:checked ~ .read-more-wrap .read-more-target {*/
 /*    opacity: 1;*/
 /*    font-size: inherit;*/
 /*    max-height: 999em;*/
 /*}*/
-/*!*!*Contenido del Boton antes de hacer click*!*!*/
+/*!*!*Contenido del Boton antes de hacer click*!*/
 /*.read-more-state ~ .read-more-trigger:before {*/
 /*    content: 'Ver mas >';*/
 /*}*/
-/*!*!*Contenido del Boton despues de hacer click*!*!*/
+/*!*!*Contenido del Boton despues de hacer click*!*/
 /*.read-more-state:checked ~ .read-more-trigger:before {*/
 /*    content: 'Ver menos <';*/
 
 /*}*/
-/*!*!*Estilo del boton antes y despues de hacer click*!*!*/
+/*!*!*Estilo del boton antes y despues de hacer click*!*/
 /*.read-more-trigger {*/
 /*    cursor: pointer;*/
 /*    display: inline-block;*/
@@ -374,5 +352,3 @@ h2 {
 /*    border: 1px solid #ddd;*/
 /*    border-radius: .25em;*/
 /*}*/
-
-/*!*!* Other style *!*!*/
