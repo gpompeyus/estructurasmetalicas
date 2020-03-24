@@ -1,0 +1,300 @@
+html {
+    font-size: 62.5%;
+}
+
+
+body{
+    background-color: whitesmoke;
+    overflow-x: hidden;
+}
+
+.menu-bar{
+    background-color:whitesmoke;
+    width:20vw;
+}
+
+.nav {
+    height: 100vh;
+    overflow-y: auto;
+}
+
+header{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    align-items: center;
+    height: 75px;
+    background-color: whitesmoke;
+}
+
+.menu-subunidad {
+    width: 85%;
+    position: absolute;
+    top: 0;
+    right: 0;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    align-items: center;
+    height: 75px;
+
+}
+.parte-izq {
+    width: 50%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.parte-der {
+    background-color:whitesmoke;
+    height: 100%;
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+.flecha-izq {
+    height: 75px;
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+.inicio {
+    height: 75px;
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+.logo-anterior {
+    background-image: url("../img/flecha-izquierda.svg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 30px;
+    height: 30px;
+}
+
+.logo-inicio {
+    background-image: url("../img/home.svg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 30px;
+    height: 30px;
+}
+
+.logo-siguiente {
+    background-image: url("../img/flecha-derecha.svg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 30px;
+    height: 30px;
+    margin: 0 auto;
+}
+
+h1 {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 700;
+    font-size: 2rem;
+    color: black;
+    text-align: center;
+    margin-top: 20px;
+ }
+
+h2 {
+    padding: 15px;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1.8rem;
+    font-weight: 400;
+    color: black;
+    text-align: justify;
+    line-height: 2.6rem;
+ }
+
+ h3 {
+     position: relative;
+     left: 20px;
+     font-family: 'Open Sans', sans-serif;
+     font-weight: 400;
+     font-size: 1.8rem;
+     color:black;
+     text-align: justify;
+ }
+
+
+#contenido-general{
+    position: absolute;
+    width: 80vw;
+    left: 20vw;
+    height: 100vh;
+    overflow: auto;
+    background-color: white;
+}
+
+#enunciado{
+    margin: 0 auto;
+    background-color:white;
+    width: 100%;
+    margin-top: 20px;
+}
+
+p {
+    position: relative;
+    left: 100px;
+}
+
+/*CONTENIDO DEL CURSO*/
+
+.contenido-subunidad {
+    background-color: white;
+    height: auto;
+    width: 80vw;
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: flex-start;
+    align-content: center;
+
+}
+
+.image1 {
+    background-image: url("https://filedn.com/lI8wAFRCHTkXQQM0PTWcKT5/metalica/img/er/er2/Area-neta-pernos-alternados_001.jpg");
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 1200px;
+    width: 100%;
+
+
+}
+
+.image2 {
+    background-image: url("https://filedn.com/lI8wAFRCHTkXQQM0PTWcKT5/metalica/img/er/er2/Area-neta-pernos-alternados-con-abatimiento-de-perfil_002.jpg");
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 1000px;
+    width: 100%;
+}
+
+.image3 {
+    background-image: url("https://filedn.com/lI8wAFRCHTkXQQM0PTWcKT5/metalica/img/er/er2/Area-neta-pernos-alternados-con-abatimiento-de-perfil_003.jpg");
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 1000px;
+    width: 100%;
+}
+
+.read-more-wrap { /*Indice de contenido*/
+    margin: 0 auto;
+    width: 90%;
+
+}
+
+.read-more-wrap { /*Indice de contenido*/
+    margin: 0 auto;
+    width: 80%;
+    overflow: auto;
+}
+
+.read-more-wrap .unidad {
+    margin-top: 10px;
+    width: 100%;
+    min-height: 40px;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: flex-start;
+    align-items: center;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1.8rem;
+    font-weight: 700;
+    background-color: #dbdbdb;
+}
+
+#subunidad-actual{
+    background-color: #4c4c4c;
+    color: white;
+}
+
+.read-more-wrap .subunidad{
+    font-family:'Open Sans', sans-serif;
+    font-size: 1.8rem;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgb(245,245,245);
+    border-top: 2px solid whitesmoke;
+}
+
+.read-more-wrap .subunidad:hover{
+    background-color: #4c4c4c;
+    color: #d2d2d2;
+    transition: .1s ease-in;
+}
+.read-more-wrap .texto-subunidad {
+
+    display: inline-block;
+    width: 90%;
+    min-height: 40px;
+    vertical-align: center;
+    padding:10px;
+}
+
+.read-more-wrap .subunidad-icon { /*tamaño del icono en la subunidad*/
+    width: 20px;
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: 5px;
+
+
+/*BOTON VER MAS/VER MENOS*/
+
+
+/*.read-more-state {*/
+/*    display: none;*/
+/*}*/
+
+/*.read-more-target {*/
+/*    opacity: 0;*/
+/*    max-height: 0;*/
+/*    font-size: 0;*/
+/*    transition: .25s ease;*/
+/*}*/
+/*!*Cuando hago click en Ver mas*!*/
+/*.read-more-state:checked ~ .read-more-wrap .read-more-target {*/
+/*    opacity: 1;*/
+/*    font-size: inherit;*/
+/*    max-height: 999em;*/
+/*}*/
+/*!*!*Contenido del Boton antes de hacer click*!*/
+/*.read-more-state ~ .read-more-trigger:before {*/
+/*    content: 'Ver mas >';*/
+/*}*/
+/*!*!*Contenido del Boton despues de hacer click*!*/
+/*.read-more-state:checked ~ .read-more-trigger:before {*/
+/*    content: 'Ver menos <';*/
+
+/*}*/
+/*!*!*Estilo del boton antes y despues de hacer click*!*/
+/*.read-more-trigger {*/
+/*    cursor: pointer;*/
+/*    display: inline-block;*/
+/*    padding: 0 .5em;*/
+/*    color: black;*/
+/*    font-size: .7em;*/
+/*    font-family:'Poppins', Arial, sans-serif;*/
+/*    line-height: 2;*/
+/*    border: 1px solid #ddd;*/
+/*    border-radius: .25em;*/
+/*}*/
