@@ -123,6 +123,7 @@ h2 {
 
  h3 {
      position: relative;
+     top: 25px;
      left: 20px;
      font-family: 'Open Sans', sans-serif;
      font-weight: 400;
@@ -166,33 +167,19 @@ p {
 
 }
 
-.image1 {
-    background-image: url("https://filedn.com/lI8wAFRCHTkXQQM0PTWcKT5/metalica/img/er/er2/Area-neta-pernos-alternados_001.jpg");
-    background-size: contain;
-    background-position: center;
-    background-repeat: no-repeat;
-    height: 1200px;
+.video1 {
+    position: relative;
     width: 100%;
-
-
+    padding-bottom: 56.25%;
+    height: 0;
 }
 
-.image2 {
-    background-image: url("https://filedn.com/lI8wAFRCHTkXQQM0PTWcKT5/metalica/img/er/er2/Area-neta-pernos-alternados-con-abatimiento-de-perfil_002.jpg");
-    background-size: contain;
-    background-position: center;
-    background-repeat: no-repeat;
-    height: 900px;
+.video1 iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
     width: 100%;
-}
-
-.image3 {
-    background-image: url("https://filedn.com/lI8wAFRCHTkXQQM0PTWcKT5/metalica/img/er/er2/Area-neta-pernos-alternados-con-abatimiento-de-perfil_003.jpg");
-    background-size: contain;
-    background-position: center;
-    background-repeat: no-repeat;
-    height: 900px;
-    width: 100%;
+    height: 100%;
 }
 
 .read-more-wrap { /*Indice de contenido*/

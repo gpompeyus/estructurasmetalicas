@@ -3,28 +3,126 @@ html {
 }
 
 
-body{
-    background-color: whitesmoke;
+body {
+    background-color: white;
     overflow-x: hidden;
 }
 
-.menu-bar{
-    background-color:whitesmoke;
-    width:20vw;
+/*ICONO HAMBURGUESA CON TRANSFORMACION EN X*/
+
+.bar {
+    /*Estilo de las tres rayitas*/
+    height: 3px;
+    width: 100%;
+    background-color: black;
+    display: block;
+    border-radius: 5px;
+    transition: 0.3s ease;
 }
+
+#bar1 {
+    /*Las tres rayitas se vuelven una sola*/
+    transform: translateY(-4px);
+}
+
+#bar3 {
+    /*Las tres rayitas se vuelven una sola*/
+    transform: translateY(4px);
+}
+
+.change .bar {
+    /*Click para cambiar el fondo de las rayitas*/
+    background-color: black;
+}
+
+.change #bar1 {
+    /*Click para mover y rotar la rayita superior*/
+    transform: translateY(4px) rotateZ(-45deg);
+}
+
+.change #bar3 {
+    /*Click para mover y rotar la rayita inferior*/
+    transform: translateY(-4px) rotate(45deg);
+}
+
+.change #bar2 {
+    /*Click para esconder la rayita del medio*/
+    opacity: 0;
+}
+
+#menu {
+    /*Container tres rayitas de la hamburguesa*/
+    position: absolute;
+    left: 20px;
+    top: 0;
+    width: 32px;
+    height: 12px;
+    margin: 30px 0 20px 20px;
+    cursor: pointer;
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: space-between;
+}
+
+/*BARRA DE NAVEGACION*/
 
 .nav {
-    height: 100vh;
-    overflow-y: auto;
+    /*Estilo del ul nav*/
+    transition: 0.15s ease;
+    display: none;
+    /*El nav no debe verse al principio*/
 }
 
-header{
+.change {
+    /*Muestra el nav al hacer click*/
+    margin-top: 50px;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: flex-start;
+    align-items: center;
+    height: 100vh;
+    background-color: whitesmoke;
+
+}
+
+.menu-bg {
+    /*Animacion Fondo de la Barra de Navegacion*/
+    width: 0;
+    background: whitesmoke;
+    transition: width .15s ease;
+    z-index: 1;
+    /*Debajo de los links de navegacion*/
+}
+
+.menu-bar {
+    width: 100vw;
+    z-index: 2;
+    /*Encima de la animacion de fondo*/
+}
+
+.change-bg {
+    /*Fondo de la Barra de Navegacion*/
+    width: 100vw;
+    height: 110vh;
+}
+
+.menu-bg,
+#menu-bar {
+    /*Desconectarlos para que no se sobrepongan*/
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+/*HASTA AQUI LA BARRA DE NAVEGACION*/
+header {
     display: flex;
     flex-flow: row wrap;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
     height: 75px;
     background-color: whitesmoke;
+    margin-bottom: 20px;
 }
 
 .menu-subunidad {
@@ -34,20 +132,21 @@ header{
     right: 0;
     display: flex;
     flex-flow: row wrap;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
     height: 75px;
 
 }
+
 .parte-izq {
     width: 50%;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
 }
 
 .parte-der {
-    background-color:whitesmoke;
+    background-color: whitesmoke;
     height: 100%;
     width: 50%;
     display: flex;
@@ -102,14 +201,15 @@ header{
     margin: 0 auto;
 }
 
+/*HASTA AQUI EL MENU DE LA SUBUNIDAD*/
+
 h1 {
     font-family: 'Open Sans', sans-serif;
     font-weight: 700;
     font-size: 2rem;
     color: black;
     text-align: center;
-    margin-top: 20px;
- }
+}
 
 h2 {
     padding: 15px;
@@ -119,46 +219,46 @@ h2 {
     color: black;
     text-align: justify;
     line-height: 2.6rem;
- }
-
- h3 {
-     position: relative;
-     left: 20px;
-     font-family: 'Open Sans', sans-serif;
-     font-weight: 400;
-     font-size: 1.8rem;
-     color:black;
-     text-align: justify;
- }
-
-
-#contenido-general{
-    position: absolute;
-    width: 80vw;
-    left: 20vw;
-    height: 100vh;
-    overflow: auto;
-    background-color: white;
 }
 
-#enunciado{
+h3 {
+    position: relative;
+    top: 25px;
+    left: 20px;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+    font-size: 1.8rem;
+    color: black;
+    text-align: justify;
+}
+
+
+#contenido-general {
+    position: absolute;
+    width: 100vw;
+    height: 100vh;
+    left: 0;
+    overflow: auto;
+}
+
+.enunciado {
     margin: 0 auto;
-    background-color:white;
+    background-color: white;
+    padding: 0 20px;
     width: 100%;
-    margin-top: 20px;
 }
 
 p {
     position: relative;
-    left: 100px;
+    left: 30px;
 }
 
 /*CONTENIDO DEL CURSO*/
 
 .contenido-subunidad {
     background-color: white;
+    width: 100%;
     height: auto;
-    width: 80vw;
     display: flex;
     flex-flow: column wrap;
     justify-content: flex-start;
@@ -166,42 +266,24 @@ p {
 
 }
 
-.image1 {
-    background-image: url("https://filedn.com/lI8wAFRCHTkXQQM0PTWcKT5/metalica/img/er/er2/Area-neta-pernos-alternados_001.jpg");
-    background-size: contain;
-    background-position: center;
-    background-repeat: no-repeat;
-    height: 1200px;
+.video1 {
+    position: relative;
     width: 100%;
-
-
+    padding-bottom: 56.25%;
+    height: 0;
 }
 
-.image2 {
-    background-image: url("https://filedn.com/lI8wAFRCHTkXQQM0PTWcKT5/metalica/img/er/er2/Area-neta-pernos-alternados-con-abatimiento-de-perfil_002.jpg");
-    background-size: contain;
-    background-position: center;
-    background-repeat: no-repeat;
-    height: 900px;
+.video1 iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
     width: 100%;
+    height: 100%;
 }
 
-.image3 {
-    background-image: url("https://filedn.com/lI8wAFRCHTkXQQM0PTWcKT5/metalica/img/er/er2/Area-neta-pernos-alternados-con-abatimiento-de-perfil_003.jpg");
-    background-size: contain;
-    background-position: center;
-    background-repeat: no-repeat;
-    height: 900px;
-    width: 100%;
-}
 
-.read-more-wrap { /*Indice de contenido*/
-    margin: 0 auto;
-    width: 90%;
-
-}
-
-.read-more-wrap { /*Indice de contenido*/
+.read-more-wrap {
+    /*Indice de contenido*/
     margin: 0 auto;
     width: 80%;
     overflow: auto;
@@ -221,41 +303,43 @@ p {
     background-color: #dbdbdb;
 }
 
-#subunidad-actual{
-    background-color: #4c4c4c;
-    color: white;
-}
-
-.read-more-wrap .subunidad{
-    font-family:'Open Sans', sans-serif;
+.read-more-wrap .subunidad {
+    font-family: 'Open Sans', sans-serif;
     font-size: 1.8rem;
     display: flex;
     flex-flow: row nowrap;
     justify-content: space-between;
     align-items: center;
-    background-color: rgb(245,245,245);
+    background-color: rgb(245, 245, 245);
     border-top: 2px solid whitesmoke;
 }
 
-.read-more-wrap .subunidad:hover{
+#subunidad-actual {
+    background-color: #4c4c4c;
+}
+
+.read-more-wrap .subunidad:hover {
     background-color: #4c4c4c;
     color: #d2d2d2;
     transition: .1s ease-in;
 }
+
 .read-more-wrap .texto-subunidad {
 
     display: inline-block;
     width: 90%;
     min-height: 40px;
     vertical-align: center;
-    padding:10px;
+    padding: 10px;
 }
 
-.read-more-wrap .subunidad-icon { /*tamaño del icono en la subunidad*/
+.read-more-wrap .subunidad-icon {
+    /*tamaño del icono en la subunidad*/
     width: 20px;
     display: inline-block;
     vertical-align: middle;
     margin-right: 5px;
+}
 
 
 /*BOTON VER MAS/VER MENOS*/
