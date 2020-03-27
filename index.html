@@ -6,15 +6,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
 
-    <meta name="description" content="Estructuras Metalicas">
+    <meta name="description" content="Diseño, Calculo y Construcción de Estructuras Metalicas">
     <meta name="keywords"
-        content="Estructuras, Calculo Estructural, Construcción, Ingenieria, Estructuras metalicas, estructuras de acero, AISC 2016">
+        content="Estructuras, Calculo Estructural, Construcción, Ingenieria, Estructuras Metalicas, Estructuras de Acero">
     <title>Estructuras Metalicas</title>
 
     <link rel="stylesheet" href="css/vernon-reset.css">
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/pc-reusable.css">
     <link rel="stylesheet" href="css/pc.css">
+    <link rel="stylesheet" media="screen and (max-width: 1024px" href="css/tablet-reusable.css">
     <link rel="stylesheet" media="screen and (max-width: 1024px" href="css/tablet.css">
+    <link rel="stylesheet" media="screen and (max-width: 768px" href="css/mobile-reusable.css">
     <link rel="stylesheet" media="screen and (max-width: 768px" href="css/mobile.css">
     <link rel="stylesheet" href="css/print.css" media="print">
 
@@ -24,7 +27,7 @@
 
 <body>
     <header>
-        <div id="menu-bar">
+        <div id="menu-bar" style="display: none;">
             <!--Barra de Navegacion-->
             <div id="menu" onclick="onClickMenu()">
                 <!--Icono hamburguesa-->
@@ -43,16 +46,16 @@
         <div class="menu-bg" id="menu-bg"></div>
         <!--Fondo Barra de Navegacion-->
 
-        <a href="https://www.ucbscz.edu.bo" target="_blank">
-            <div id="logo-catolica"></div>
-        </a>
     </header>
 
     <section>
         <!--portada-->
         <div class="portada">
-            <h1>Estructuras Metalicas</h1>
-            <h2>Metodo LRFD, basado en la AISC 2016</h2>
+            <a href="https://www.ucbscz.edu.bo" target="_blank">
+                <div class="logo-catolica"></div>
+            </a>
+            <h1>Estructuras Metalicas </h1>
+            <h2>Metodo LRFD, basado en la AISC 2018</h2>
             <a href="#boton-aqui"><button id="boton-portada">Ver Contenido</button></a>
         </div>
     </section>
@@ -64,15 +67,15 @@
             <a href="https://www.linkedin.com/in/german-pompeyus/" target="_blank"><img alt=""
                     src="img/linkedin-icon.svg"></a>
         </div>
-        <div id="foto-docente"></div>
-        <p class="enunciado"> Docente:</p>
+        <div class="foto-docente"></div>
+        <h5>Docente:</h5>
         <div>
-            <p class="nombre-docente"> Ing. German Pompeyus Escalante</p>
+            <h3 style="font-weight: 700;"> Ing. German Pompeyus Escalante</h3>
             <hr>
-            <p class="educacion-docente"> Master en Calculo de Estructuras de Obra Civil</p>
-            <p class="profesion-docente"> Jefe de Proyectos&nbspen<a class="pompeyusestructuras"
-                    href="https://www.pompeyusestructuras.com" target="_blank"> <span id="pompeyus-estructuras">Pompeyus
-                        Estructuras</span></a></p>
+            <h5> Master en Calculo de Estructuras de Obra Civil</h5>
+            <h5> Jefe de Proyectos&nbsp;en <a class="pompeyusestructuras" href="https://www.pompeyusestructuras.com"
+                    target="_blank"> <span id="pompeyus-estructuras">Pompeyus
+                        Estructuras</span></a></h5>
         </div>
     </section>
 
@@ -99,68 +102,71 @@
     </div>
 
 
-
     <div id="boton-aqui"></div>
     <div class="contenido-container">
-        <p class="enunciado">Contenido:</p>
-
+        <h3>Contenido:</h3>
         <a id="clases-virtuales" href="clases-virtuales.html" target="_blank">CLASES VIRTUALES (LINK) <style>
-            #clases-virtuales {
-                padding: 20px;
-                color: red;
-                font-size: 2rem;
-            }
-        </style></a>
+                #clases-virtuales {
+                    padding: 20px;
+                    color: red;
+                    font-size: 2rem;
+                }
+            </style></a>
+
+
+
+
+        <!-- ! DESDE AQUI EL CONTENIDO REUSABLE CON css-reusable-->
 
         <input type="checkbox" class="read-more-state" id="post-2" />
 
         <ul class="read-more-wrap">
 
 
-            <li class="unidad">1. Introducción</li>
-
-                                     
-
-                    <li class="unidad">2. Introducción a las cargas estructurales de diseño</li>
 
 
-                    <li class="unidad">3. Diseño de Miembros a Tension</li>
 
-                    <a href="vid/area-neta-pernos-en-linea.html">
-                        <div class="subunidad" id="subunidad-actual">
-                            <li class="texto-subunidad">
-                                <span class="span-subunidad">Area neta pernos en linea</span>
-                            </li>
-                            <img class="subunidad-icon" src="img/youtube-icon.svg" alt="">
-                        </div>
-                    </a>
 
-                    <a href="er/er1.html">
-                        <div class="subunidad" id="subunidad-actual">
-                            <li class="texto-subunidad">
-                                <span class="span-subunidad">Ejercicio Resuelto 1 - Area neta con pernos en linea</span>
-                            </li>
-                            <img class="subunidad-icon" src="img/document.svg" alt="">
-                        </div>
-                    </a>
 
-                    <a href="vid/area-neta-pernos-alternados.html">
-                        <div class="subunidad" id="subunidad-actual">
-                            <li class="texto-subunidad">
-                                <span class="span-subunidad">Area neta pernos alternados</span>
-                            </li>
-                            <img class="subunidad-icon" src="img/youtube-icon.svg" alt="">
-                        </div>
-                    </a>
+            <li class="unidad">3. Diseño de Miembros a Tension</li>
 
-                    <a href="er/er2.html">
-                        <div class="subunidad">
-                            <li class="texto-subunidad">
-                                <span class="span-subunidad">Ejercicio Resuelto 2 - Area neta con pernos alternados </span>
-                            </li>
-                            <img class="subunidad-icon" src="img/document.svg" alt="">
-                        </div>
-                    </a>
+            <a href="miembros-a-tension/area-neta-pernos-en-linea.html">
+                <div class="subunidad" id="subunidad-actual">
+                    <li class="texto-subunidad">
+                        <span class="span-subunidad">Area neta pernos en linea</span>
+                    </li>
+                    <img class="subunidad-icon" src="img/youtube-icon.svg" alt="">
+                </div>
+            </a>
+
+            <a href="miembros-a-tension/ejercicio-resuelto-area-neta-pernos-en-linea.html">
+                <div class="subunidad" id="subunidad-actual">
+                    <li class="texto-subunidad">
+                        <span class="span-subunidad">Ejercicios Resueltos - Area neta con pernos en linea</span>
+                    </li>
+                    <img class="subunidad-icon" src="img/document.svg" alt="">
+                </div>
+            </a>
+
+            <a href="miembros-a-tension/area-neta-pernos-alternados.html">
+                <div class="subunidad" id="subunidad-actual">
+                    <li class="texto-subunidad">
+                        <span class="span-subunidad">Area neta pernos alternados</span>
+                    </li>
+                    <img class="subunidad-icon" src="img/youtube-icon.svg" alt="">
+                </div>
+            </a>
+
+            <a href="miembros-a-tension/ejercicio-resuelto-area-neta-pernos-alternados.html">
+                <div class="subunidad">
+                    <li class="texto-subunidad">
+                        <span class="span-subunidad">Ejercicios Resueltos - Area neta con pernos alternados </span>
+                    </li>
+                    <img class="subunidad-icon" src="img/document.svg" alt="">
+                </div>
+            </a>
+
+
 
 
             <li class="read-more-target">
@@ -171,11 +177,14 @@
                 <!--lorem 4-->
             </li>
             <!--ELEMENTO PARA VER MAS-->
-
+            <!-- ! HASTA AQUI EL CONTENIDO REUSABLE con css.mobile-reusable-->
 
         </ul>
 
         <label for="post-2" class="read-more-trigger"></label>
+
+
+
     </div>
 
 

@@ -1,0 +1,269 @@
+.menu-bar {
+    /** LADO IZQUIERDO*/
+    background-color: whitesmoke;
+    width: 25vw;
+}
+
+.nav {
+    height: 100vh;
+    overflow-y: auto;
+
+}
+
+.contenido-general {
+    position: absolute;
+    width: 75vw;
+    left: 25vw;
+    height: 100vh;
+    overflow: auto;
+    background-color: white;
+}
+
+.contenido-subunidad {
+    background-color: white;
+    height: auto;
+    width: 75vw;
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: flex-start;
+    align-content: center;
+}
+
+header {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    align-items: center;
+    height: 65px;
+}
+
+h1 {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 4.5rem;
+    color: whitesmoke;
+    text-align: center;
+    font-weight: 700;
+}
+
+h2 {
+    margin-top: 4px;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 2.7rem;
+    color: #c0c0c0;
+    text-align: center;
+    font-weight: 400;
+}
+
+h3 {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 700;
+    font-size: 1.75rem;
+    color: black;
+    text-align: center;
+    line-height: 2.6rem;
+}
+
+h4 {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 700;
+    font-size: 1.75rem;
+    color: black;
+    text-align: justify;
+    line-height: 2.6rem;
+}
+
+h5 {
+    text-align: center;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+    font-size: 1.5rem;
+    color: black;
+    line-height: 2rem;
+}
+
+p {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+    font-size: 1.65rem;
+    color: black;
+    text-align: justify;
+    line-height: 2.7rem;
+    padding: 5%;
+}
+
+.menu-subunidad {
+    position: absolute;
+    top: 0;
+    width: 75vw;
+    left: 25vw;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    align-items: center;
+    height: 65px;
+
+}
+
+.parte-izq {
+    width: 50%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: whitesmoke;
+}
+
+.parte-der {
+    background-color: whitesmoke;
+    height: 100%;
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+.flecha-izq {
+    height: 65px;
+    width: 50%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    cursor: pointer;
+}
+
+.inicio {
+    height: 65px;
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+.logo-anterior {
+    background-image: url("../img/flecha-izquierda.svg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 28px;
+    height: 28px;
+}
+
+.logo-inicio {
+    background-image: url("../img/home.svg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 28px;
+    height: 28px;
+}
+
+.logo-siguiente {
+    background-image: url("../img/flecha-derecha.svg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 28px;
+    height: 28px;
+    margin: 0 auto;
+}
+
+.read-more-wrap {
+    /*Indice de contenido*/
+    margin: 0 auto;
+    width: 90%;
+    overflow: auto;
+    margin-bottom: 300px;
+}
+
+.read-more-wrap .unidad {
+    margin-top: 10px;
+    padding: 10px;
+    min-height: 40px;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: flex-start;
+    align-items: center;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1.75rem;
+    font-weight: 700;
+    background-color: #dbdbdb;
+}
+
+.read-more-wrap .subunidad {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1.65rem;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgb(245, 245, 245);
+    border-top: 2px solid whitesmoke;
+}
+
+.read-more-wrap .subunidad:hover {
+    background-color: #4c4c4c;
+    color: #d2d2d2;
+    transition: .1s ease-in;
+}
+
+.read-more-wrap .texto-subunidad {
+
+    display: inline-block;
+    min-height: 40px;
+    vertical-align: center;
+    padding: 10px;
+    width: 95%;
+}
+
+.read-more-wrap .subunidad-icon {
+    /*tamaño del icono en la subunidad*/
+    width: 25px;
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: 5px;
+}
+
+
+/*BOTON VER MAS/VER MENOS*/
+
+
+/*.read-more-state {*/
+/*    display: none;*/
+/*}*/
+
+/*.read-more-target {*/
+/*    opacity: 0;*/
+/*    max-height: 0;*/
+/*    font-size: 0;*/
+/*    transition: .25s ease;*/
+/*}*/
+/*!*!*Cuando hago click en Ver mas*!*!*/
+/*.read-more-state:checked ~ .read-more-wrap .read-more-target {*/
+/*    opacity: 1;*/
+/*    font-size: inherit;*/
+/*    max-height: 999em;*/
+/*}*/
+/*!*!*Contenido del Boton antes de hacer click*!*!*/
+/*.read-more-state ~ .read-more-trigger:before {*/
+/*    content: 'Ver mas >';*/
+/*}*/
+/*!*!*Contenido del Boton despues de hacer click*!*!*/
+/*.read-more-state:checked ~ .read-more-trigger:before {*/
+/*    content: 'Ver menos <';*/
+
+/*}*/
+/*!*!*Estilo del boton antes y despues de hacer click*!*!*/
+/*.read-more-trigger {*/
+/*    cursor: pointer;*/
+/*    display: inline-block;*/
+/*    padding: 0 .5em;*/
+/*    color: black;*/
+/*    font-size: .7em;*/
+/*    font-family:'Poppins', Arial, sans-serif;*/
+/*    line-height: 2;*/
+/*    border: 1px solid #ddd;*/
+/*    border-radius: .25em;*/
+/*}*/
+
+/*!*!* Other style *!*!*/
