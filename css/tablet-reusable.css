@@ -111,7 +111,7 @@ h2 {
 
 .contenido-general{
     display: flex;
-    flex-flow: column wrap;
+    flex-flow: column nowrap;
     justify-content: flex-start;
     align-items: center;
     position: absolute;
@@ -124,11 +124,11 @@ h2 {
 .contenido-subunidad { /**ABAJO DEL ENUNCIADO*/
     background-color: white;
     height: auto;
-    width: 100%;
+    width: 80%;
     display: flex;
-    flex-flow: column wrap;
-    justify-content: flex-start;
-    align-content: center;
+    flex-flow: column nowrap;
+    justify-items: flex-start;
+    align-items: center;
 }
 
 .read-more-wrap { /*Indice de contenido*/

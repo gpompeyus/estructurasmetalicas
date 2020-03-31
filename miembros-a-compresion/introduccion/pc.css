@@ -1,0 +1,37 @@
+html {
+    font-size: 62.5%;
+}
+
+body {
+    background-color: whitesmoke;
+    overflow-x: hidden;
+}
+/*CONTENIDO DEL CURSO*/
+
+.image1 {
+    background-image: url("https://filedn.com/lI8wAFRCHTkXQQM0PTWcKT5/metalica/img/miembros%20a%20compresion/Introduccion/puente-pailon.jpg");
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 500px;
+    width: 85%;
+}
+
+.image2 {
+    background-image: url("https://filedn.com/lI8wAFRCHTkXQQM0PTWcKT5/metalica/img/miembros%20a%20compresion/Introduccion/citicorp-construction.jpg");
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 900px;
+    width: 85%;
+}
+
+h5 {
+    margin: 25px;
+}
+
+
+#subunidad-actual {
+    background-color: #4c4c4c;
+    color: white;
+}
