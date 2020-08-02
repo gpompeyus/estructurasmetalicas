@@ -1,0 +1,40 @@
+#boton-portada{
+    cursor: pointer;
+    font-size: 1.4rem;
+    font-weight: 700;
+    border: 1px solid whitesmoke;
+    border-radius: 32px;
+    padding: 7px;
+    margin-top: 8px;
+    width: 140px;
+    font-family:'Open Sans', sans-serif;
+    letter-spacing: 1px;
+    color: #dbdbdb;
+}
+
+.icon-container {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    align-items: flex-start;
+    width:160px;
+    height:40px;
+}
+
+.descripcion-curso{
+    text-align: justify;
+    margin: 20px auto;
+    font-family:'Open Sans', sans-serif;
+    font-size: 1.8rem;
+    width: 80%;
+}
+
+.descripcion-curso ul li{
+    line-height: 2.6rem;
+    margin-top: .9rem;
+    font-size: 1.5rem;
+}
+
+img {
+    height: 2.2rem;
+}

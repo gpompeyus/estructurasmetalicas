@@ -1,0 +1,38 @@
+#boton-portada{
+    cursor: pointer;
+    font-size: 1.8rem;
+    font-weight: 700;
+    border: 1px solid whitesmoke;
+    border-radius: 32px;
+    padding: 7px;
+    margin-top: 8px;
+    width: 170px;
+    font-family:'Open Sans', sans-serif;
+    letter-spacing: 1px;
+    color: #dbdbdb;
+}
+
+.icon-container {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    align-items: flex-start;
+    width:160px;
+    height:40px;
+}
+
+/*CONTENIDO DEL CURSO*/
+.descripcion-curso{
+    text-align: justify;
+    margin: 20px auto;
+    font-family:'Open Sans', sans-serif;
+    width: 80%;
+    
+}
+
+.read-more-wrap { /*Indice de contenido*/
+    margin: 0 auto;
+    width: 80%;
+    overflow: auto;
+    margin-bottom: 300px;
+}
