@@ -1,0 +1,72 @@
+html {
+    font-size: 62.5%;
+}
+
+body {
+    background-color: whitesmoke;
+    overflow-x: hidden;
+}
+/*CONTENIDO DEL CURSO*/
+
+h5 {
+    margin: 25px;
+}
+
+.image1 {
+    background-image: url("https://filedn.com/lI8wAFRCHTkXQQM0PTWcKT5/metalica/img/miembros%20a%20compresion/Teoria%20de%20Columnas%20%28Euler%29/euler1.jpg");
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 190px;
+    width: 100%;
+
+
+}
+
+.image2 {
+    background-image: url("https://filedn.com/lI8wAFRCHTkXQQM0PTWcKT5/metalica/img/miembros%20a%20compresion/Teoria%20de%20Columnas%20%28Euler%29/euler2.jpg");
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100px;
+    width: 100%;
+}
+
+.image3 {
+    background-image: url("https://filedn.com/lI8wAFRCHTkXQQM0PTWcKT5/metalica/img/miembros%20a%20compresion/Teoria%20de%20Columnas%20%28Euler%29/euler3.jpg");
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 400px;
+    width: 100%;
+}
+
+.image4 {
+    background-image: url("https://filedn.com/lI8wAFRCHTkXQQM0PTWcKT5/metalica/img/miembros%20a%20compresion/Teoria%20de%20Columnas%20%28Euler%29/euler4.jpg");
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 180px;
+    width: 100%;
+}
+
+
+#subunidad-actual {
+    background-color: #4c4c4c;
+    color: white;
+}
+
+.video1 {
+    position: relative;
+    width: 100%;
+    padding-bottom: 56.25%;
+    height: 0;
+}
+
+.video1 iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}

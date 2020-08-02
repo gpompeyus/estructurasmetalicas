@@ -1,0 +1,120 @@
+.portada {
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    align-items: center;
+    height: 50vh;
+    background: rgb(255, 255, 255);
+    background: linear-gradient(180deg, rgba(255, 255, 255, 1) 0%, rgba(0, 0, 0, 0.65) 0%), url("../img/portada_madera.jpg");
+    background-color: whitesmoke;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+h3{
+    margin-bottom: 0;
+    margin-top: 0;
+}
+
+
+
+#boton{
+    cursor: pointer;
+    color: #dbdbdb;
+    font-size: .9rem;
+    font-weight: 700;
+    border: 1px solid whitesmoke;
+    border-radius: 32px;
+    padding: 5px;
+    margin-top: 0;
+    width: 125px;
+    letter-spacing: 1px;
+    text-align: center;
+}
+
+.docente-container {
+    /*div Docente*/
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #F0F0F0;
+    padding: 20px;
+}
+
+.icon-container {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    align-items: flex-start;
+    width: 160px;
+    height: 40px;
+}
+
+.icon-container a {
+    width: 30px;
+    height: 30px;
+}
+
+.foto-docente {
+    margin: 10px 10px;
+    height: 150px;
+    width: 150px;
+    border-radius: 50%;
+    background-image: url("../img/docente.jpg");
+    background-size: cover;
+    background-position: top;
+    background-repeat: no-repeat;
+}
+
+#pompeyus-estructuras {
+    color: blue;
+}
+
+#pompeyus-estructuras:hover {
+    text-decoration: underline;
+}
+
+#pompeyus-estructuras:visited {
+    color: #883EAD;
+}
+
+
+.icon-container {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    align-items: flex-start;
+    width:160px;
+    height:40px;
+}
+
+.descripcion-curso{
+    text-align: justify;
+    margin: 20px auto;
+    width: 90%;
+}
+
+.descripcion-curso ul li{
+    margin-top: .5rem;
+}
+
+.indice {
+    position: static;
+    width: 90%;
+}
+
+@media (min-width:900px) {
+    body {
+        display: inherit;
+    }
+
+    .indice, .descripcion-curso {
+        max-width: 900px;
+    }
+
+    .unidad, .texto-subunidad {
+        font-size: 1rem;
+    }
+}

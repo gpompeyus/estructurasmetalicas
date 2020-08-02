@@ -1,0 +1,121 @@
+html {
+    font-size: 62.5%;
+}
+
+
+body{
+    background-color: whitesmoke;
+    overflow-x: hidden;
+}
+
+/*CONTENIDO DEL CURSO*/
+.link-libro {
+    position: relative;
+    top:245px;
+    display: block;
+    font-size: 1.5rem;
+    font-family: 'Open Sans', sans-serif;
+    color: #883EAD;
+    margin: 10px 15px;
+}
+
+
+.libros {
+display: flex;
+flex-flow: row wrap;
+justify-content: center;
+align-items: center;
+
+}
+
+.libro1 {
+    display: flex;
+    flex-flow: row wrap;
+    align-items: flex-start;
+    justify-content: center;
+    background-image: url(https://filedn.com/lI8wAFRCHTkXQQM0PTWcKT5/metalica/img/Libros%20y%20enlaces%20de%20interes/estruturas-metalicas-antonio-da-fonseca.jpg);
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 250px;
+    width: 250px;
+    margin-bottom: 50px;
+}
+
+.libro2 {
+    display: flex;
+    flex-flow: row wrap;
+    align-items: flex-start;
+    justify-content: center;
+    background-image: url(https://filedn.com/lI8wAFRCHTkXQQM0PTWcKT5/metalica/img/Libros%20y%20enlaces%20de%20interes/estructuras-de-acero-mccormak.jpg);
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 250px;
+    width: 250px;
+    margin-bottom: 50px;
+}
+
+
+.libro3 {
+    display: flex;
+    flex-flow: row wrap;
+    align-items: flex-start;
+    justify-content: center;
+    background-image: url(https://filedn.com/lI8wAFRCHTkXQQM0PTWcKT5/metalica/img/Libros%20y%20enlaces%20de%20interes/estructuras-de-acero-william-segui.jpg);
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 250px;
+    width: 250px;
+    margin-bottom: 50px;
+}
+
+
+.libro4 {
+    display: flex;
+    flex-flow: row wrap;
+    align-items: flex-start;
+    justify-content: center;
+    background-image: url(https://filedn.com/lI8wAFRCHTkXQQM0PTWcKT5/metalica/img/Libros%20y%20enlaces%20de%20interes/zapata-baglietto.jpg);
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 250px;
+    width: 250px;
+    margin-bottom: 50px;
+
+}
+
+
+.libro5 {
+    display: flex;
+    flex-flow: row wrap;
+    align-items: flex-start;
+    justify-content: center;
+    background-image: url(https://filedn.com/lI8wAFRCHTkXQQM0PTWcKT5/metalica/img/Libros%20y%20enlaces%20de%20interes/metric-properties-of-structural-shapes.jpg);
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 250px;
+    width: 250px;
+    margin-bottom: 50px;
+
+}
+
+
+
+
+
+
+
+#subunidad-actual{
+    background-color: #4c4c4c;
+    color: white;
+ }
+
+ .contenido-subunidad {
+    width: 100%;
+    
+    }
+

@@ -1,0 +1,45 @@
+/*CONTENIDO DEL CURSO*/
+h5 {
+    margin: 25px;
+}
+
+
+
+.image1 {
+    background-image: url("https://filedn.com/lI8wAFRCHTkXQQM0PTWcKT5/metalica/img/miembros%20a%20compresion/Teoria%20de%20Columnas%20%28Euler%29/euler1-mobile.jpg");
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 190px;
+    width: 100%;
+
+
+}
+
+.image2 {
+    background-image: url("https://filedn.com/lI8wAFRCHTkXQQM0PTWcKT5/metalica/img/miembros%20a%20compresion/Teoria%20de%20Columnas%20%28Euler%29/euler2-mobile.jpg");
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 80px;
+    width: 100%;
+}
+
+.image3 {
+    background-image: url("https://filedn.com/lI8wAFRCHTkXQQM0PTWcKT5/metalica/img/miembros%20a%20compresion/Teoria%20de%20Columnas%20%28Euler%29/euler3-mobile.jpg");
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 600px;
+    width: 100%;
+}
+
+.image4 {
+    background-image: url("https://filedn.com/lI8wAFRCHTkXQQM0PTWcKT5/metalica/img/miembros%20a%20compresion/Teoria%20de%20Columnas%20%28Euler%29/euler4-mobile.jpg");
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 260px;
+    width: 100%;
+}
+

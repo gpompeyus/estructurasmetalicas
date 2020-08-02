@@ -1,0 +1,44 @@
+html {
+    font-size: 62.5%;
+}
+
+body {
+    background-color: whitesmoke;
+    overflow-x: hidden;
+}
+/*CONTENIDO DEL CURSO*/
+
+.image1 {
+    background-image: url("https://filedn.com/lI8wAFRCHTkXQQM0PTWcKT5/metalica/img/miembros%20a%20tension/area%20neta%20pernos%20alternados/Area-neta-pernos-alternados_001.jpg");
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 1200px;
+    width: 100%;
+
+
+}
+
+.image2 {
+    background-image: url("https://filedn.com/lI8wAFRCHTkXQQM0PTWcKT5/metalica/img/miembros%20a%20tension/area%20neta%20pernos%20alternados/Area-neta-pernos-alternados-con-abatimiento-de-perfil_002.jpg");
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 900px;
+    width: 100%;
+}
+
+.image3 {
+    background-image: url("https://filedn.com/lI8wAFRCHTkXQQM0PTWcKT5/metalica/img/miembros%20a%20tension/area%20neta%20pernos%20alternados/Area-neta-pernos-alternados-con-abatimiento-de-perfil_003.jpg");
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 900px;
+    width: 100%;
+}
+
+
+#subunidad-actual {
+    background-color: #4c4c4c;
+    color: white;
+}

@@ -1,0 +1,24 @@
+/*CONTENIDO DEL CURSO*/
+.image1 {
+    background-image: url("https://filedn.com/lI8wAFRCHTkXQQM0PTWcKT5/metalica/img/miembros%20a%20compresion/Introduccion/puente-pailon.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 400px;
+    width: 85%;
+
+
+}
+
+.image2 {
+    background-image: url("https://filedn.com/lI8wAFRCHTkXQQM0PTWcKT5/metalica/img/miembros%20a%20compresion/Introduccion/citicorp-construction.jpg");
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 1000px;
+    width: 100%;
+}
+
+h5 {
+    margin: 25px;
+}
