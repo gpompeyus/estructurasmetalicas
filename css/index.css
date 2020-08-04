@@ -5,7 +5,7 @@
     align-items: center;
     height: 50vh;
     background: rgb(255, 255, 255);
-    background: linear-gradient(180deg, rgba(255, 255, 255, 1) 0%, rgba(0, 0, 0, 0.65) 0%), url("../img/portada_madera.jpg");
+    background: linear-gradient(180deg, rgba(255, 255, 255, 1) 0%, rgba(0, 0, 0, 0.65) 0%), url("../img/portada_metalica.jpg");
     background-color: whitesmoke;
     background-size: cover;
     background-position: center;
